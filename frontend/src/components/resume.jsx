@@ -62,10 +62,11 @@ export default class Resume extends Component {
                             <div className="col-lg-5 ms-lg-5 ps-lg-5 mt-lg-2 col-md-10 ms-md-5 ps-md-5 mt-md-5 z-index--1">
                                 {resumeData.work.map(x => <Career {...x} />)}
                             </div>
-                            <div className="d-flex justify-content-center mt-5 px-md-0">
+                            <div className="d-flex justify-content-center mt-3 px-md-0">
                                 <div className="m-resume-career-separator w-lg-55 w-md-100" />
                             </div>
-
+                        </div>
+                        <div className="row mt-5 pt-5">
                             <div className="col-lg-4 col-md-12 mt-lg-2 z-index--1">
                                 <div className="col-lg-11 text-lg-end col-md-12 text-md-center m-resume-career-header">
                                 <h3>EDUCATION</h3>

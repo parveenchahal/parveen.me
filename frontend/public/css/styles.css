@@ -1,0 +1,527 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600&family=Inter:wght@300;400;500;600;700&display=swap");
+:root {
+    --font-1               : "Inter", sans-serif;
+    --font-2               : "IBM Plex Serif", serif;
+    --font-mono            : Consolas, "Andale Mono", Courier, "Courier New", monospace;
+
+    --font-size-1          : 1.1rem;
+
+    --color-1              : hsla(182, 82%, 38%, 1);
+    --color-2              : hsla(24, 100%, 47%, 1);
+    --color-2-light        : hsla(24, 100%, 57%, 1);
+    --color-gray-light     : #929393;
+
+    --color-selected-button: var(--color-2);
+    
+    
+    --color-gray-19: #0a0a0a;
+    --color-gray-18: #141414;
+    --color-gray-17: #1e1e1e;
+    --color-gray-16: #282828;
+    --color-gray-15: #323333;
+    --color-gray-14: #3b3d3d;
+    --color-gray-13: #454747;
+    --color-gray-12: #4f5151;
+    --color-gray-11: #595b5b;
+    --color-gray-10: #636565;
+    --color-gray-9 : #737474;
+    --color-gray-8 : #828484;
+    --color-gray-7 : #929393;
+    --color-gray-6 : #a1a3a3;
+    --color-gray-5 : #b1b2b2;
+    --color-gray-4 : #c1c1c1;
+    --color-gray-3 : #d0d1d1;
+    --color-gray-2 : #e0e0e0;
+    --color-gray-1 : #eff0f0;
+    --color-white  : #ffffff;
+}
+
+.m-bg {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background: black;
+    background-image: url(../images/background.jpg);
+    background-size: cover;
+    background-position: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.m-bg-op {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: block;
+    content: "";
+    position: absolute;
+    background: black;
+    opacity: 0.75;
+}
+
+.full-screen {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+.m-nav-bar-lg {
+    font-family: var(--font-1);
+    font-size: 1rem;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.m-nav-bar-lg ul {
+    display: inline-block;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
+
+.m-nav-bar-lg li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 1.6rem;
+    position: relative;
+    padding: 0 0;
+}
+
+.m-nav-bar-lg a {
+    background-color: transparent;
+    display: block;
+    color: rgba(255, 255, 255, 0.5);
+    text-decoration: none;
+    transition: 0.4s;
+    margin-bottom: 1.5rem;
+}
+
+.m-nav-bar-lg a::after {
+    content: "";
+    height: 3px;
+    width: 0%;
+    background: white;
+    position: absolute;
+    left: 0;
+    bottom: 1.2rem;
+    transition: 0.4s;
+    
+}
+
+.m-nav-bar-lg a:hover:after {
+    width: 100%;
+}
+
+
+.m-nav-bar-lg a:hover {
+    color: white;
+    text-decoration: none;
+}
+
+.m-selected-menu-desktop a, .m-selected-menu-desktop a:hover {
+    color: var(--color-selected-button);
+}
+
+.m-selected-menu-desktop a:hover::after {
+    width: 0;
+}
+
+/****************************************************************************
+ *  Mobile Navbar
+****************************************************************************/
+
+.m-mobile-menu-toggle {
+    display: block;
+     font-family: var(--font-1);
+     font-size: 1.3rem;
+     text-transform: uppercase;
+     letter-spacing: .4rem;
+     background-color: black;
+     width: 7rem;
+     height: 7rem;
+     position: absolute;
+     right: 0;
+     top: 0;
+}
+
+.m-mobile-menu-toggle .m-mobile-menu-icon {
+    display: block;
+    width: 60px;
+    height: 2px;
+    right: auto;
+    bottom: auto;
+    background-color: white;
+    position: absolute;
+    left: 1.7rem;
+    top: 50%;
+    -webkit-transition: all .5s;
+    transition: all .5s;
+}
+
+.m-mobile-menu-toggle .m-mobile-menu-icon::before,
+.m-mobile-menu-toggle .m-mobile-menu-icon::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: inherit;
+    position: absolute;
+    left: 0;
+    -webkit-transition: all .5s;
+    transition: all .5s;
+}
+
+.m-mobile-menu-toggle .m-mobile-menu-icon::before {
+    top: -1.2rem;
+    transition: all .5s;
+}
+
+.m-mobile-menu-toggle .m-mobile-menu-icon::after {
+    top: 1.2rem;
+    transition: all .5s;
+}
+
+.m-mobile-menu-toggle.is-clicked .m-mobile-menu-icon {
+    background-color: rgba(255, 255, 255, 0);
+    -webkit-transition: all .1s;
+    transition: all .1s;
+}
+
+.m-mobile-menu-toggle.is-clicked .m-mobile-menu-icon::before, 
+.m-mobile-menu-toggle.is-clicked .m-mobile-menu-icon::after {
+    background-color: white;
+}
+
+.m-mobile-menu-toggle.is-clicked .m-mobile-menu-icon::before {
+    top: 0;
+    -webkit-transform: rotate(135deg);
+    transform: rotate(135deg);
+}
+
+.m-mobile-menu-toggle.is-clicked .m-mobile-menu-icon::after {
+    top: 0;
+    -webkit-transform: rotate(225deg);
+    transform: rotate(225deg);
+}
+
+.m-mobile-menu-wrap {
+    width: 100%;
+    height: 0;
+}
+
+.m-mobile-menu-wrap .m-mobile-menu {
+    display: block;
+    background-color: black;
+    width: 100%;
+    height: 0;
+    transition: 0.3s;
+    transition-delay: .2s;
+}
+
+.m-mobile-menu.open-menu {
+    height: 25rem;
+    transition-delay: 0;
+}
+
+
+.m-mobile-menu-items {
+    position: absolute;
+    display: block;
+    font-size: 2.5rem;
+    font-weight: 500;
+    font-family: var(--font-1);
+    height: auto;
+    width: 100%;
+    transform-origin: center top;
+    -webkit-transform: translateY(-8rem);
+    transform: translateY(-8rem);
+    visibility: hidden;
+    transition: .3s;
+    top: 0;
+    transition-delay: 0s;
+}
+
+
+.m-mobile-menu-items ul {
+    display: block;
+    text-align: center;
+    padding-top: 3rem;
+    padding-bottom: 5rem;
+    list-style: none;
+}
+
+.m-mobile-menu-items li {
+    padding-bottom: 3rem;
+}
+
+.m-mobile-menu-items a {
+    color: white;
+    text-decoration: none;
+}
+
+.m-mobile-menu-items.open-menu {
+    visibility: visible;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    transition-delay: .4s;
+}
+
+
+.m-selected-menu-mobile a {
+    color: var(--color-selected-button);
+}
+
+
+/****************************************************************************
+ *  Home content
+****************************************************************************/
+
+.m-home-content h1 {
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
+    font-weight: 600;
+    letter-spacing: -.04em;
+    line-height: 1;
+    color: white;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-family: var(--font-1);
+}
+
+@media (min-width: 768px) {  
+    .m-home-content h1 {
+        font-size: 8rem;
+    }
+}
+
+@media (min-width: 992px) { 
+    .m-home-content h1 {
+        font-size: 6rem;
+    }
+}
+
+.m-home-content h3 {
+    font-family: var(--font-2);
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: rgba(255, 255, 255, 0.5);
+    position: relative;
+}
+
+@media (min-width: 768px) {  
+    .m-home-content h3 {
+        font-size: 3rem;
+    }
+}
+
+@media (min-width: 992px) { 
+    .m-home-content h3 {
+        font-size: 1.5rem;
+    }
+}
+
+.m-home-content h3 span, .m-home-content h3 a {
+    text-decoration: none;
+    color: white;
+}
+
+.m-home-content-separator {
+    content: "";
+    height: 2px;
+    background-color: rgba(255, 255, 255, 0.05);
+    
+}
+
+.m-home-content-social {
+    font-size: 1.5rem;
+}
+
+@media (min-width: 768px) {  
+    .m-home-content-social {
+        font-size: 3.5rem;
+    }
+}
+
+@media (min-width: 992px) { 
+    .m-home-content-social {
+        font-size: 1.5rem;
+    }
+}
+
+.m-home-content-social a {
+    margin: 1.5rem;
+    color: white;
+}
+
+
+.m-home-content-social a:hover {
+    color: var(--color-2-light);
+}
+
+
+
+/****************************************************************************
+ *  Resume content
+****************************************************************************/
+
+.m-resume-career-header h3 {
+    display: inline-block;
+    font-size: var(--font-size-1);
+    font-weight: 600;
+    letter-spacing: .25em;
+    position: relative;
+}
+
+@media (min-width: 768px) {
+    .m-resume-career-header h3 {
+        font-size: 3rem;
+    }
+}
+
+@media (min-width: 992px) {
+    .m-resume-career-header h3 {
+        font-size: 1.2rem;
+    }
+}
+
+.m-resume-career-header h3::after {
+    content: "";
+    display: block;
+    height: 2px;
+    background-color: var(--color-1);
+    margin-top: 5px;
+}
+
+
+.m-resume-career-content-cname {
+    font-family: var(--font-1);
+    font-size: 2.1rem;
+    font-weight: 600;
+}
+
+@media (min-width: 768px) {
+    .m-resume-career-content-cname {
+        font-size: 5rem;
+    }
+}
+
+@media (min-width: 992px) {
+    .m-resume-career-content-cname {
+        font-size: 2.1rem;
+    }
+}
+
+.m-resume-career-content-des {
+    font-family: var(--font-2);
+    font-size: 1.2rem;
+    font-style: italic;
+}
+
+@media (min-width: 768px) {
+    .m-resume-career-content-des {
+        font-size: 2.8rem;
+    }
+}
+
+@media (min-width: 992px) {
+    .m-resume-career-content-des {
+        font-size: 1.2rem;
+    }
+}
+
+.m-resume-career-content-date {
+    display: inline-block;
+    font-family: var(--font-1);
+    font-size: 1rem;
+    font-style: normal;
+    text-transform: uppercase;
+    letter-spacing: .12em;
+    color: var(--color-gray-light);
+}
+
+.m-resume-career-content-date::before {
+    content: "\2022";
+    margin-right: .2rem;
+    color: black;
+}
+
+@media (min-width: 768px) {
+    .m-resume-career-content-date {
+        font-size: 2.2rem;
+    }
+}
+
+@media (min-width: 992px) {
+    .m-resume-career-content-date {
+        font-size: 1rem;
+    }
+}
+
+
+@media (min-width: 768px) {
+    .m-resume-career-content-details {
+        font-size: 2rem;
+    }
+}
+
+@media (min-width: 992px) {
+    .m-resume-career-content-details {
+        font-size: 1rem;
+    }
+}
+
+.m-resume-career-separator {
+    content: "";
+    height: 1px;
+    border-radius: 1px;
+    justify-content: center;
+    background-color: var(--color-gray-2);
+}
+
+/****************************************************************************
+ *  Footer
+****************************************************************************/
+
+.m-footer-social {
+    font-size: 1.5rem;
+}
+
+@media (min-width: 768px) {  
+    .m-footer-social {
+        font-size: 3.5rem;
+    }
+}
+
+@media (min-width: 992px) { 
+    .m-footer-social {
+        font-size: 1.5rem;
+    }
+}
+
+.m-footer-social a {
+    margin: 0.5rem;
+    color: white;
+}
+
+
+.m-footer-social a:hover {
+    color: var(--color-2-light);
+}

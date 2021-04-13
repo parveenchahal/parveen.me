@@ -1,0 +1,87 @@
+@media (min-width: 768px) {
+    
+}
+
+@media (min-width: 992px) {
+    
+}
+
+.bg-black {
+    background-color: black;
+}
+
+@media (min-width: 768px) {
+    .bg-md-black {
+        background-color: black;
+    }
+
+    .w-md-100 {
+        width: 100%;
+    }
+}
+
+@media (min-width: 992px) {
+    .bg-lg-black {
+        background-color: black;
+    }
+
+    .w-lg-55 {
+        width: 55%;
+    }
+
+    .h-lg-12 {
+        height: 12%;
+    }
+}
+
+.m-mt-28vh {
+    margin-top: 28vh;
+}
+
+.z-index--1 {
+    z-index: -1;
+}
+
+.z-index-50 {
+    z-index: 50;
+}
+
+.z-index-100 {
+    z-index: 100;
+}
+
+.z-index-200 {
+    z-index: 200;
+}
+
+.z-index-300 {
+    z-index: 300;
+}
+
+.z-index-400 {
+    z-index: 400;
+}
+
+.z-index-500 {
+    z-index: 500;
+}
+
+.z-index-600 {
+    z-index: 600;
+}
+
+.z-index-700 {
+    z-index: 700;
+}
+
+.z-index-800 {
+    z-index: 800;
+}
+
+.z-index-900 {
+    z-index: 900;
+}
+
+.z-index-1000 {
+    z-index: 1000;
+}

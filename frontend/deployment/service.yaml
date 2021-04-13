@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: frontend-parveenchahal-service
+  namespace: parveenchahal
+  labels:
+    app: frontend-parveenchahal
+spec:
+  ports:
+  - port: 80
+    protocol: TCP
+    name: port-5000
+    targetPort: 5000
+  selector:
+    run: frontend-parveenchahal
+  type: ClusterIP

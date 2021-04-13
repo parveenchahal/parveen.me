@@ -1,0 +1,30 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: frontend
+  namespace: parveenchahal
+spec:
+  selector:
+      matchLabels:
+        run: frontend-parveenchahal
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        run: frontend-parveenchahal
+    spec:
+      containers:
+      - name: frontend-parveenchahal-1
+        image: pchahal24/parveenchahal-frontend:latest
+        imagePullPolicy: Always
+        ports:
+          - name: port-5000
+            containerPort: 5000
+            protocol: TCP
+        resources:
+          limits:
+            cpu: 50m
+            memory: 200Mi
+          requests:
+            cpu: 25m
+            memory: 100Mi

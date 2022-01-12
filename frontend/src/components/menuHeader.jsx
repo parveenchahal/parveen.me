@@ -14,6 +14,7 @@ export default class MenuHeader extends Component {
                             <ul>
                                 <li className={this.props.desktop.home}><a href="/">Home</a></li>
                                 <li className={this.props.desktop.resume}><a href="/resume">Resume</a></li>
+                                <li><a href="/coding">Coding</a></li>
                             </ul>
                         </nav>
                     </div>
@@ -30,6 +31,7 @@ export default class MenuHeader extends Component {
                             <ul>
                                 <li className={this.props.mobile.home}><a href="/">Home</a></li>
                                 <li className={this.props.mobile.resume}><a href="/resume">Resume</a></li>
+                                <li><a href="/coding">Coding</a></li>
                             </ul>
                         </div>
                     </div>

@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: frontend-parveenchahal-1
-        image: pchahal24/parveenchahal-frontend:latest
+        image: pchahal24/parveenchahal-frontend:2022-01-13
         imagePullPolicy: Always
         ports:
           - name: port-5000

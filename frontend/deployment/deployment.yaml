@@ -18,8 +18,8 @@ spec:
         image: pchahal24/pc-frontend:2022-01-19
         imagePullPolicy: Always
         ports:
-          - name: port-5000
-            containerPort: 5000
+          - name: port-3000
+            containerPort: 3000
             protocol: TCP
         resources:
           limits:

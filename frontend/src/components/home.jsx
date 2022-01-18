@@ -34,11 +34,11 @@ export default class Home extends Component {
                         </div>
                         <div className="row mt-4 m-home-content-social">
                             <div className="col text-center">
-                            <a className="col text-center" href="http://linkedin.parveenchahal.com" target="_blank"><i className="fab fa-linkedin" aria-hidden="true" /></a>
-                            <a className="col text-center" href="http://github.parveenchahal.com" target="_blank"><i className="fab fa-github" aria-hidden="true" /></a>
-                            <a className="col text-center" href="http://facebook.parveenchahal.com" target="_blank"><i className="fab fa-facebook-square" aria-hidden="true" /></a>
-                            <a className="col text-center" href="http://instagram.parveenchahal.com" target="_blank"><i className="fab fa-instagram" aria-hidden="true" /></a>
-                            <a className="col text-center" href="http://twitter.parveenchahal.com" target="_blank"><i className="fab fa-twitter" aria-hidden="true" /></a>
+                            <a className="col text-center" href="http://linkedin.parveen.me" target="_blank"><i className="fab fa-linkedin" aria-hidden="true" /></a>
+                            <a className="col text-center" href="http://github.parveen.me" target="_blank"><i className="fab fa-github" aria-hidden="true" /></a>
+                            <a className="col text-center" href="http://facebook.parveen.me" target="_blank"><i className="fab fa-facebook-square" aria-hidden="true" /></a>
+                            <a className="col text-center" href="http://instagram.parveen.me" target="_blank"><i className="fab fa-instagram" aria-hidden="true" /></a>
+                            <a className="col text-center" href="http://twitter.parveen.me" target="_blank"><i className="fab fa-twitter" aria-hidden="true" /></a>
                             </div>
                         </div>
                     </div>

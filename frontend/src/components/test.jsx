@@ -11,7 +11,7 @@ export default class Test extends Component {
     }
 
     componentDidMount() {
-        fetch("https://pcapis.com/parveenchahal/resume")
+        fetch("https://pcapis.com/pc/resume")
         .then(res => res.json())
         .then(
             (res) => {

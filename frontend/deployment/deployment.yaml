@@ -2,20 +2,20 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: frontend
-  namespace: parveenchahal
+  namespace: pc
 spec:
   selector:
       matchLabels:
-        run: frontend-parveenchahal
+        run: frontend-pc
   replicas: 1
   template:
     metadata:
       labels:
-        run: frontend-parveenchahal
+        run: frontend-pc
     spec:
       containers:
-      - name: frontend-parveenchahal-1
-        image: pchahal24/parveenchahal-frontend:2022-01-13
+      - name: frontend-pc-1
+        image: pchahal24/pc-frontend:2022-01-19
         imagePullPolicy: Always
         ports:
           - name: port-5000

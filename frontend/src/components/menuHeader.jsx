@@ -33,6 +33,7 @@ export default class MenuHeader extends Component {
                                 <li className={this.props.mobile.home}><a href="/">Home</a></li>
                                 <li className={this.props.mobile.resume}><a href="/resume">Resume</a></li>
                                 <li><a href="/coding">Coding</a></li>
+                                <li><a href="/enc">Encrypt/Decrypt</a></li>
                             </ul>
                         </div>
                     </div>

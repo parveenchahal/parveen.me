@@ -15,6 +15,7 @@ export default class MenuHeader extends Component {
                                 <li className={this.props.desktop.home}><a href="/">Home</a></li>
                                 <li className={this.props.desktop.resume}><a href="/resume">Resume</a></li>
                                 <li><a href="/coding">Coding</a></li>
+                                <li><a href="/enc">Encrypt/Decrypt</a></li>
                             </ul>
                         </nav>
                     </div>

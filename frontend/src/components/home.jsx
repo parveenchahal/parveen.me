@@ -26,7 +26,7 @@ export default class Home extends Component {
                         </div>
                         <div className="row mt-4 justify-content-center">
                             <div className="col-lg-5 col-md-10 text-center m-home-content">
-                            <h3>I'm a <span>Software Engineer</span>. Currently, I work for <a target="_blank" href="https://www.microsoft.com/">Microsoft</a>. I'm part of <a target="_blank" href="https://azure.microsoft.com/en-us/services/azure-arc">Azure Arc team</a>.</h3>
+                            <h3>I'm a <span>Software Engineer</span>. Currently, I work for <a target="_blank" href="https://www.google.com/">Google</a>.</h3>
                             </div>
                         </div>
                         <div className="row mt-4 justify-content-center">
